@@ -1,0 +1,18 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Ubuntu", "sans-serif";
+}
+body {
+  background: #eef5ff;
+}
+
+.bg-sidebar {
+  background-image: url("/public/assets/images/bg-sidebar-1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
