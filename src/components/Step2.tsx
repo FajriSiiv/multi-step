@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 import ButtonLinks from "./ButtonLinks";
 import { Switch } from "@headlessui/react";
 import { IoGameController } from "react-icons/io5";
@@ -13,7 +12,9 @@ interface CardProps {
 
 const CardPlan = ({ bgIcon, title, price, children }: CardProps) => {
   return (
-    <div className="flex flex-col justify-between h-[200px] border-2 hover:border-marine px-5 py-3 rounded-xl hover:bg-[#F8F9FE] transition-all cursor-pointer">
+    <div
+      className={`flex flex-col justify-between h-[200px] border-2 hover:border-marine px-5 py-3 rounded-xl hover:bg-[#F8F9FE] transition-all cursor-pointer`}
+    >
       <div>
         <div
           className={`h-14 w-14 rounded-full flex items-center justify-center ]`}
@@ -33,8 +34,9 @@ const CardPlan = ({ bgIcon, title, price, children }: CardProps) => {
 };
 
 export default function StepTwo() {
-  const path = useLocation();
   const [enabled, setEnabled] = useState<any>(false);
+
+  // useEffect(() => {}, [enabled]);
 
   return (
     <div className="text-marine relative h-full">

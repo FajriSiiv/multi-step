@@ -10,6 +10,7 @@ import StepOne from "./components/Step1";
 import StepTwo from "./components/Step2";
 import StepThree from "./components/Step3";
 import StepFour from "./components/Step4";
+import Confirm from "./components/Confirm";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
   {
     path: "/step-4",
     element: <StepFour />,
+  },
+  {
+    path: "/confirm",
+    element: <Confirm />,
   },
 ]);
 

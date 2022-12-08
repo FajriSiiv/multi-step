@@ -1,5 +1,4 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
 import ButtonLinks from "./ButtonLinks";
 
 interface CompCheck {
@@ -33,9 +32,6 @@ const CompoCheck = ({ forLabel, idCheck }: CompCheck) => {
 };
 
 export default function StepThree() {
-  const path = useLocation();
-  console.log(path);
-
   return (
     <div className="text-marine relative h-full">
       <h1 className="font-semibold text-3xl">Pick add-ons</h1>

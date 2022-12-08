@@ -1,10 +1,8 @@
-import React from "react";
-
 interface PageProps {
-  step: string;
-  step_page: string;
-  step_number: string;
-  pathUrl: any;
+  step?: string;
+  step_page?: string;
+  step_number?: string;
+  pathUrl?: any;
 }
 
 export default function SidebarStep({
@@ -16,11 +14,9 @@ export default function SidebarStep({
   const path = window.location.pathname;
 
   return (
-    <div className="flex items-center text-[16px] gap-3 text-white">
+    <div className={`flex items-center text-[16px] gap-3 text-white `}>
       <span
-        className={`transition-all px-3 py-1 text-xl border-2 border-white rounded-full ${
-          pathUrl === path ? "text-marine font-semibold bg-white" : null
-        }`}
+        className={`transition-all px-3 py-1 text-xl border-2 border-white rounded-full `}
       >
         {step_number}
       </span>

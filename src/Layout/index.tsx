@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import Sidebar from "./Sidebar";
 
 export default function Layout({ children }: { children: any }) {
-  const [sideb, setSideb] = useState<any>();
+  const [sideb, setSideb] = useState<any>(<Sidebar />);
 
   useEffect(() => {
     setSideb(<Sidebar />);
-  }, [<Sidebar />]);
+  }, []);
 
   return (
     <div className="w-full h-[100vh] flex items-center justify-center">

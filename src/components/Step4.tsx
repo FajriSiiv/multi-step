@@ -1,11 +1,7 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
 import ButtonLinks from "./ButtonLinks";
 
 export default function StepFour() {
-  const path = useLocation();
-  console.log(path);
-
   return (
     <div className="text-marine relative h-full">
       <h1 className="font-semibold text-3xl">Finishing up</h1>
@@ -40,7 +36,7 @@ export default function StepFour() {
         </div>
         <div className="w-full flex justify-between absolute right-0 bottom-0">
           <ButtonLinks nextStep="Go Back" tujuan={"/step-3"} />
-          <ButtonLinks tujuan={"/step-4"} nextStep="Confirm" />
+          <ButtonLinks tujuan={"/confirm"} nextStep="Confirm" />
         </div>
       </form>
     </div>

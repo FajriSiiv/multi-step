@@ -1,11 +1,7 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
 import ButtonLinks from "./ButtonLinks";
 
 export default function StepOne() {
-  const path = useLocation();
-  console.log(path);
-
   return (
     <div className="text-marine relative h-full">
       <h1 className="font-semibold text-3xl">Personal info</h1>
