@@ -13,6 +13,7 @@ module.exports = {
         pastelblue: "hsl(228, 100%, 84%)",
         lightblue: "hsl(206, 94%, 87%)",
         strawberry: "hsl(354, 84%, 57%)",
+        bgHover: "#F8F9FE",
       },
     },
   },
